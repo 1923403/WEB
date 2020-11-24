@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kontakt</title>
+	</head>
+	<body>
+		<header>
+			<p>Kontaktformular<p>
+		</header>
+
+		<main>
+			<form action="kontakt.php" method="post" autocomplete="on">
+				<fieldset>
+					<div style="float: right;">
+						<textarea id="ianfrage" cols="40" rows="5"></textarea>
+					</div>
+					<div>
+						<label for="ivorname">Vorname:</label>
+						<input id="ivorname" type="text" name="vorname">
+						<label for="inachname">Nachname:</label>
+						<input id="inachname" type="text" name="nachname">
+						<label for="istrasse">Stra&szlig;e:</label>
+						<input id="istrasse" type="text" name="strasse">
+						<label for="ihausnummer">Hausnummer:</label>
+						<input id="ihausnummer" type="text" name="hausnummer">
+						<label for="iplz">PLZ:</label>
+						<input id="iplz" type="number" name="plz">
+						<label for="iland">Land:</label>
+						<input id="iland" type="text" name="land">
+						<label for="itelnr">Telefonnummer:</label>
+						<input id="itelnr" type="tel" name="telefonnummer">
+						<label for="imail">E-Mail:</label>
+						<input id="imail" type="email" name="email">
+					</div>
+				</fieldset>
+				<fieldset>
+					<input type="submit" value="Absenden" />
+					<input type="reset" value="Zur&uuml;cksetzen" />
+				</fieldset>
+			</form>
+		</main>
+		<footer>
+			&copy; Team A-04
+			<a href="...">Impressum</a>
+		</footer>
+	</body>
+</html>

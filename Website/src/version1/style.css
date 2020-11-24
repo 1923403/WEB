@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+img:hover {
+	opacity: 0.5;
+}
+
+input:focus {
+	background-color: #4d6ec4;
+}
+
+.topmenu {
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	width: 100;
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	overflow: hidden;
+	background-color: #014493;
+}
+
+ul.topmenu>li {
+	padding-right: 5px;
+}
+
+ul.topmenu>li:last-child {
+	padding-right: 0;
+}
+
+.topmenu li {
+	float: left;
+}
+
+.topmenu a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	width: 160px;
+	border-radius: 15px;
+	padding: 10px 0;
+	outline: 0;
+}
+
+.topmenu a:hover {
+	background-color: #4d6ec4;
+}
+
+.active {
+	background-color: #4d6ec4;
+}
+
+.footer {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #014493;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.footer li {
+	float: left;
+}
+
+.footer a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	background-color: #4d6ec4;
+}
+
+::selection {
+	color: red;
+	background: yellow
+}
+
+#kontakt {
+	float: right;
+	background-color: #93018d;
+	border-radius: 30px;
+}
+
+#kontakt a:hover {
+	background-color: #c748be;
+}

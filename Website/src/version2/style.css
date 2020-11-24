@@ -1,0 +1,88 @@
+@charset "ISO-8859-1";
+
+@media screen and (max-width:1080px) {
+.content {
+	text-align: center;
+	color: yellow;
+	background-color: grey;
+}
+
+}
+
+body {
+	margin: 0px;
+	min-height: 100%;
+}
+
+#footer {
+	background-color: #22376f;
+	color: white;
+	bottom: 0;
+}
+
+#topmenu {
+	position: sticky;
+	top: 0;
+}
+
+#topmenu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #22376f;
+	position: sticky;
+}
+
+#topmenu li {
+	float: left;
+}
+
+#topmenu li a, #topmenu .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+#topmenu li a:hover, #topmenu .dropdown:hover .dropbtn {
+	background-color: #53619e;
+}
+
+#topmenu li.dropdown {
+	display: inline-block;
+}
+
+.content {
+	margin: 10px;
+}
+
+#topmenu .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+#topmenu .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+#topmenu .dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+#topmenu .dropdown:hover .dropdown-content {
+	display: block;
+}
+
+#topmenu #kontakt {
+	float: right;
+}

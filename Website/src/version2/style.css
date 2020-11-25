@@ -1,11 +1,37 @@
 @charset "ISO-8859-1";
 
-@media screen and (max-width:1080px) {
-	.content {
-		text-align: center;
-	}
+
+/* Create three equal columns that floats next to each other */
+.column {
+	flex: 40%;
+	padding: 20px;
+  }
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+
+#image {
+	width: 100%;
+	height: auto;
+	display: block;
+	
 }
 
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:1080px) {
+	.column {
+	  flex: 100%;
+	}
+  }
 
 body {
 	margin: 0px;
@@ -37,6 +63,12 @@ footer ul {
 	background-color: #22376f;
 }
 
+
+#mainText, #heading{
+	padding: 20px;
+}
+
+
 #topmenu li, footer li {
 	float: left;
 }
@@ -60,7 +92,7 @@ footer ul {
 }
 
 .content {
-	margin: 20px 40px 60px 40px;
+	margin-bottom: 60px;
 }
 
 #topmenu .dropdown-content {

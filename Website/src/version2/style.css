@@ -11,17 +11,15 @@
 
 body {
 	margin: 0px;
-	background-color: brown;
-	position: relative;
 }
 
 footer {
 	background-color: #22376f;
 	color: white;
-	text-decoration: none;
-	position: relative;
+	position: sticky;
 	bottom: 0px;
 	width: 100%;
+
 }
 
 footer ul {
@@ -41,7 +39,7 @@ footer ul {
 	background-color: #22376f;
 }
 
-#topmenu li {
+#topmenu li, footer li {
 	float: left;
 }
 
@@ -96,9 +94,3 @@ footer ul {
 	float: right;
 }
 
-#wrapper {
-	position: relative; 
-	min-height:100%;
-	height: auto;
-	height: 100%;
-}

@@ -3,8 +3,6 @@
 @media screen and (max-width:1080px) {
 	.content {
 		text-align: center;
-		color: yellow;
-		background-color: grey;
 	}
 }
 
@@ -16,7 +14,7 @@ body {
 footer {
 	background-color: #22376f;
 	color: white;
-	position: sticky;
+	position: fixed;
 	bottom: 0px;
 	width: 100%;
 
@@ -62,7 +60,7 @@ footer ul {
 }
 
 .content {
-	margin: 10px;
+	margin: 20px 40px 60px 40px;
 }
 
 #topmenu .dropdown-content {

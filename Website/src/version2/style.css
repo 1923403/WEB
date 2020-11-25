@@ -8,23 +8,26 @@
 	}
 }
 
+html, body{
+	height: 100%;
+}
+
 body {
 	margin: 0px;
 	background-color: brown;
-	min-height: 100vh;
 	position: relative;
 }
 
-#footer {
+footer {
 	background-color: #22376f;
 	color: white;
 	text-decoration: none;
-	position: absolute;
-	bottom: 0;
+	position: relative;
+	bottom: 0px;
 	width: 100%;
 }
 
-#footer ul {
+footer ul {
 	list-style-type: none;
 }
 

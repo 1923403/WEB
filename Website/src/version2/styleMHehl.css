@@ -1,11 +1,16 @@
 @charset "ISO-8859-1";
 
 
-/* Create three equal columns that floats next to each other */
-.column {
-	flex: 40%;
+/* Create two unequal columns that floats next to each other */
+.leftColumn {
+	flex: 30%;
 	padding: 20px;
+	max-width: 500px;
   }
+.rightColumn {
+	flex: 60%;
+	padding: 20px;
+}
 
 .row{
 	display: flex;
@@ -25,13 +30,6 @@
 }
 
   
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width:1080px) {
-	.column {
-	  flex: 100%;
-	  
-	}
-  }
 
 body {
 	margin: 0px;
@@ -125,5 +123,42 @@ footer ul {
 }
 
 
+/*max anfang*/
+.profile{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	  width: 100%;
+	  align-self: center;
+}
 
+.profile:hover, .textElement:hover {
+	transition: 0.3s;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.profile img{
+	border-radius: 5px 5px 0 0;
+}
+
+.profileDescription {
+	padding: 2px 16px;
+	background-color: #22376f;
+	color:white;
+}
+
+.textElement{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	padding: 2px 16px;
+	margin-bottom: 20px;
+	
+}
+
+hr{
+	margin-left: 20px;
+	margin-right: 20px;
+	border: 1px #22376f;
+	border-style: solid;
+}
+
+
+/*max ende*/
 

@@ -27,13 +27,54 @@
 		<h1 id="heading">&Uuml;ber mich</h1>
 		<div class="row">
 			<div class="column">
-			 <img id="image" src="./media/images/mHehl.png" alt="Maximilian Hehl">
+                <div class="profile">
+                    <img id="image" src="./media/images/mHehl.png" height="300" width="300" alt="Maximilian Hehl">
+                    <div class="profileDescription">
+                        <h3><b>Maximilian Hehl</b></h3>
+                        <p>Medizinische Informatik</p>
+                    </div>
+                </div>
+			 
 			</div>
 			
 			<div class="column">
-				<h2>Das bin ich</h2>
-			  <p>Zurzeit studiere ich im dritten Fachsemester medizinische Informatik (IMB) 
-                  an der <a href="https://www.hs-mannheim.de/">Hochschule Mannheim</a>.</p>
+			    <h2>Das bin ich</h2>
+			    <p>Ich bin 22 Jahre alt und wohne in Mannheim. Zurzeit studiere ich im dritten Fachsemester 
+                    medizinische Informatik (IMB) an der <a href="https://www.hs-mannheim.de/">Hochschule Mannheim</a>.
+                </p>
+			    <div id="hiddenList">
+                    <p id="clickMe" onclick="showList()">
+                        <img id="arrow" src="./media/icons/arrow_right-24px.svg" height="24" width="24">
+                        Meine St&auml;rken:
+                        <ul id="strengths">
+                            <li><p class="listItem1">Schlafen</p></li>
+                            <li><p class="listItem">Schlafen</p></li>
+                            <li><p class="listItem">Schlafen</p></li>
+                            <li><p class="listItem">Schlafen</p></li>
+                            <li><p class="listItem">Schlafen</p></li>
+                            <li><p class="listItem">Schlafen</p></li>
+                            <li><p class="listItem">Schlafen</p></li>
+                        </ul>
+                    </p>
+                    <script>
+                        var shown=false;
+                        var arrow = document.getElementById("arrow");
+                        var listItem = document.getElementsByClassName("listItem1");
+
+                        function showList(){
+                            if(!shown){
+                                shown=true;
+                             
+                                arrow.style.transform="rotate(90deg)";
+                                arrow.style.transition="0.2s";
+                            }else {
+                                shown=false;
+                                arrow.style.transform="rotate(0deg)";
+                            }
+                        }
+                    </script>
+			    </div>
+            
 			</div>
 		</div>
 		<div id="mainText">

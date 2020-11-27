@@ -1,5 +1,9 @@
 @charset "ISO-8859-1";
 
+:root{
+	--main-color: #22376f;
+}
+
 
 /* Create two unequal columns that floats next to each other */
 .leftColumn {
@@ -36,7 +40,7 @@ body {
 }
 
 footer {
-	background-color: #22376f;
+	background-color:var(--main-color);
 	color: white;
 	position: fixed;
 	bottom: 0px;
@@ -58,7 +62,7 @@ footer ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #22376f;
+	background-color:var(--main-color);
 }
 
 
@@ -141,7 +145,7 @@ footer ul {
 
 .profileDescription {
 	padding: 2px 16px;
-	background-color: #22376f;
+	background-color: var(--main-color);
 	color:white;
 }
 
@@ -155,7 +159,7 @@ footer ul {
 hr{
 	margin-left: 20px;
 	margin-right: 20px;
-	border: 1px #22376f;
+	border: 1pxvar(--main-color);
 	border-style: solid;
 }
 

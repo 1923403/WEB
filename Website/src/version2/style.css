@@ -1,5 +1,8 @@
 @charset "ISO-8859-1";
 
+:root{
+	--main-color: #22376f;
+}
 
 /* Create three equal columns that floats next to each other */
 .column {

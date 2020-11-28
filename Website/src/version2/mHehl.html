@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="styleMHehl.css">
 
 <title>Maximilian Hehl</title>
 </head>
@@ -24,9 +24,10 @@
 	</div>
 
 	<div class="content">
-		<h1 id="heading">&Uuml;ber mich</h1>
+        <h1 id="heading">&Uuml;ber mich</h1>
+        <hr/>
 		<div class="row">
-			<div class="column">
+			<div class="leftColumn">
                 <div class="profile">
                     <img id="image" src="./media/images/mHehl.png" height="300" width="300" alt="Maximilian Hehl">
                     <div class="profileDescription">
@@ -37,44 +38,39 @@
 			 
 			</div>
 			
-			<div class="column">
-			    <h2>Das bin ich</h2>
-			    <p>Ich bin 22 Jahre alt und wohne in Mannheim. Zurzeit studiere ich im dritten Fachsemester 
-                    medizinische Informatik (IMB) an der <a href="https://www.hs-mannheim.de/">Hochschule Mannheim</a>.
-                </p>
-			    <div id="hiddenList">
-                    <p id="clickMe" onclick="showList()">
-                        <img id="arrow" src="./media/icons/arrow_right-24px.svg" height="24" width="24">
-                        Meine St&auml;rken:
-                        <ul id="strengths">
-                            <li><p class="listItem1">Schlafen</p></li>
-                            <li><p class="listItem">Schlafen</p></li>
-                            <li><p class="listItem">Schlafen</p></li>
-                            <li><p class="listItem">Schlafen</p></li>
-                            <li><p class="listItem">Schlafen</p></li>
-                            <li><p class="listItem">Schlafen</p></li>
-                            <li><p class="listItem">Schlafen</p></li>
-                        </ul>
+			<div class="rightColumn">
+                <div class="textElement">
+                    <h2>Das bin ich</h2>
+                    <p>Ich bin 22 Jahre alt und wohne in Mannheim. Zurzeit studiere ich im dritten Fachsemester 
+                        medizinische Informatik (IMB) an der <a href="https://www.hs-mannheim.de/">Hochschule Mannheim</a>.
                     </p>
-                    <script>
-                        var shown=false;
-                        var arrow = document.getElementById("arrow");
-                        var listItem = document.getElementsByClassName("listItem1");
-
-                        function showList(){
-                            if(!shown){
-                                shown=true;
-                             
-                                arrow.style.transform="rotate(90deg)";
-                                arrow.style.transition="0.2s";
-                            }else {
-                                shown=false;
-                                arrow.style.transform="rotate(0deg)";
-                            }
-                        }
-                    </script>
-			    </div>
-            
+                </div>
+                <div class="textElement">
+                    <h3><b>Bisherige Ausbildung</b></h3>
+                    <ul>
+                        <li>Abitur (2018)</li>
+                        <li>Ausbildung zum Rettungssanit&auml;ter (2018)</li>
+                        <li>Studium der medizinischen Informatik (seit 2019)</li>
+                    </ul>
+                </div>
+                <div class="textElement">
+                    <h3><b>Meine St&auml;rken</b></h3>
+                    <ul>
+                        <li>Essen</li>
+                        <li>Schlafen</li>
+                        <li>Und noch viel mehr!</li>
+                    </ul>
+                </div>
+                <div class="textElement">
+                    <h3><b>Meine Interessen und Hobbys</b></h3>
+                    <ul>
+                        <li>Hobby1</li>
+                        <li>Hobby2</li>
+                        <li>Hobby3</li>
+                        <li>Hobby4</li>
+                        <li>Hobby5</li>
+                    </ul>
+                </div>
 			</div>
 		</div>
 		<div id="mainText">
@@ -82,7 +78,6 @@
 
 			
 		</div>
-	
 	</div>
 	<footer>
 		<ul>

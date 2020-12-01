@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="style.css">
 
 <title>Team A-04</title>
 </head>
-<body>
+<body onload ="cookieAllert()">
 	<div id="topmenu">
 		<ul>
 			<li><a href="#home">&Uuml;ber uns</a></li>
@@ -27,7 +27,7 @@
 		<h1 id="heading">&Uuml;ber uns</h1>
 		<div class="row">
 			<div class="column">
-			 <img id="image" src="./media/images/group.png" width="799" height="324" alt="Gruppenbild">
+			 <img id="image" src="./media/images/group.png" width="799" height="324" alt="Gruppenbild" >
 			</div>
 			
 			<div class="column">
@@ -132,5 +132,18 @@
 			<li><a href="#">Impressum</a></li>
 		</ul>
 	</footer>
+
+	
+	<script>
+		function cookieAllert() {
+			var r = confirm("Diese Website verwendet Cookies.\nWenn Sie einverstanden sind klicken Sie 'OK', wenn nicht können Sie die Website mit 'Abbrechen' schließen.\nFür mehr Informationen gehen Sie auf https://www.cookiesandyou.com/");
+  				if (r == true) {
+    				
+  				} else {
+    				/*window.close();*/
+  				}
+		}
+		</script>
+
 </body>
 </html>

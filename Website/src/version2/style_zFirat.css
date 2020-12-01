@@ -1,7 +1,5 @@
-@charset "ISO-8859-1";
-
-:root { -
-	-main-color: #22376f;
+:root {
+	--main-color: #22376f;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -141,7 +139,7 @@ footer ul {
 }
 
 
-/*Text linksbündig*/
+/*Text linksbÃ¼ndig*/
 .leftColumn {
 	flex: 0%;
 	padding: 20px;
@@ -149,7 +147,7 @@ footer ul {
 	margin-top: 50px;
 }
 
-/*Text rechtsbündig*/
+/*Text rechtsbÃ¼ndig*/
 .rightColumn {
 	flex: 0%;
 	padding: 20px;

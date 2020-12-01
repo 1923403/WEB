@@ -4,37 +4,11 @@
 	--main-color: #22376f;
 }
 
-/* Create three equal columns that floats next to each other */
-.column {
-	flex: 40%;
-	padding: 20px;
-  }
-
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-  /* Clear floats after the columns */
-  .row:after {
-	content: "";
-	display: table;
-	clear: both;
-  }
-
 #image {
 	width: 100%;
 	height: auto;
 	display: block;
 }
-
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width:1080px) {
-	.column {
-	  flex: 100%;
-	  
-	}
-  }
 
 body {
 	margin: 0px;
@@ -63,11 +37,11 @@ footer ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #22376f;
+	background-color: var(--main-color);
 }
 
 
-#mainText, #heading{
+#heading{
 	padding: 20px;
 }
 
@@ -129,25 +103,23 @@ footer ul {
 
 .profileList{
 	display: flex;
-	padding: 20px;
-	background-color: white;
+	padding: 10px;
 }
-.profile{
-	flex: 20%
-}
+
 .profile{
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	  width: 100%;
-	  align-self: center;
+	cursor: pointer;
+	margin: 10px;
+	background-color: var(--main-color);
+}
+
+.profile a{
+	text-decoration: none;
 }
 
 .profile:hover, .textElement:hover {
 	transition: 0.3s;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.profile img{
-	border-radius: 5px 5px 0 0;
 }
 
 .profileDescription {
@@ -156,50 +128,37 @@ footer ul {
 	color:white;
 }
 
-.textElement{
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	padding: 2px 16px;
-	margin-bottom: 20px;
-	
+.profileList:after{
+	content: "";
+	display: table;
+	clear: both;
 }
 
 
+#groupImage{
+	visibility: hidden;
+	max-height: 0px;
+}
 
+.teamDescription{
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
-
-/*tobi anfang*/
-.column2 {
-	flex: 1%;
-	padding: 20px;
-	text-align: center;
-	background-color: chartreuse;
-	border: solid 2px black;
-  }
-  @media screen and (max-width:1080px) {
-	.column2 {
-	  flex: 100%;
+@media screen and (max-width:720px){
+	.profileList{
+		visibility: hidden;
+		max-height: 0px;
 	}
-  }
 
-.card{
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  	transition: 0.3s;
-  	width: 50%;
-	border-radius: 5px;
-	
-}
+	#groupImage{
+		visibility: visible;
+		max-height: 720px;
+		box-sizing: border-box;
+		padding: 20px;
 
-.card:hover {
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+		height: auto;
+		width: 100%;
+	}
 
-.card img{
-	border-radius: 5px 5px 0 0;
 }
-
-.cardDescription {
-	padding: 2px 16px;
-	background-color: #22376f;
-	color:white;
-}
-/*tobi ende*/

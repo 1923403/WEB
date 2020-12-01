@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.content {
+  margin: 20px auto;
+  background-color: #f4f4f4;
+  max-width: 350px;
+  border: 1px solid #000;
+  line-height: 1.4;
+  padding: 20px;
+}
+
+.content h1 {
+  text-align: center;
+}
+
+.formular-angaben {
+  width: 100%;
+}
+
+.formular-feld label {
+  display: block;
+}
+
+.formular-feld input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px;
+  outline: none;
+}
+
+#text {
+  min-height: 100px;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.formular-button button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.formular-button button:first-child {
+  margin-bottom: 5px;
+}

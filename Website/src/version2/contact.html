@@ -1,82 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" type="text/css" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="contact.css" />
+    <title>Kontakt</title>
+  </head>
 
-<title>Kontakt</title>
-</head>
-<body>
-	<div id="topmenu">
-		<ul>
-			<li><a href="index.html">&Uuml;ber uns</a></li>
-			<li class="dropdown"><a href="javascript:void(0)"
-				class="dropbtn">Team</a>
-				<div class="dropdown-content">
-					<a href="#">Tobias Benrath</a> <a href="#">Zahid Firat</a> <a
-						href="#">Steffen Hausmann</a> <a href="#">Maximilian Hehl</a> <a
-						href="#">Markus Huber</a>
-				</div></li>
-			<li id="kontakt"><a href="#home">Kontakt</a></li>
-		</ul>
-	</div>
-	<div class="content">
-		<form action="kontakt.php" method="post" autocomplete="on">
-			<fieldset>
-				<div>
-					<textarea id="ianfrage" cols="40" rows="5"></textarea>
-				</div>
-				<div>
-					<div>
-						<label for="ivorname">Vorname:</label>
-						<input id="ivorname" type="text" name="vorname">
-					</div>
-					<div>
-						<label for="inachname">Nachname:</label>
-						<input id="inachname" type="text" name="nachname">
-					</div>
-					<div>
-						<label for="istrasse">Stra&szlig;e:</label>
-						<input id="istrasse" type="text" name="strasse">
-					</div>
-					<div>
-						<label for="ihausnummer">Hausnummer:</label>
-						<input id="ihausnummer" type="text" name="hausnummer">
-					</div>
-					<div>
-						<label for="iplz">PLZ:</label>
-						<input id="iplz" type="number" name="plz">
-					</div>
-					<div>
-						<label for="iort">Ort:</label>
-						<input id="iort" type="text">
-					</div>
-					<div>
-						<label for="iland">Land:</label>
-						<input id="iland" type="text" name="land">
-					</div>
-					<div>
-						<label for="itelnr">Telefonnummer:</label>
-						<input id="itelnr" type="tel" name="telefonnummer">
-					</div>
-					<div>
-						<label for="imail">E-Mail:</label>
-						<input id="imail" type="email" name="email">
-					</div>
-				</div>
-			</fieldset>
-			<fieldset>
-				<input type="submit" value="Absenden"> <input type="reset"
-					value="Zur&uuml;cksetzen">
-			</fieldset>
-		</form>
-		</form>
-	</div>
-	<footer>
-		<ul>
-			<li><a href="#">Impressum</a></li>
-		</ul>
-	</footer>
-</body>
+  <body>
+    <div id="topmenu">
+      <ul>
+        <li><a href="index.html">&Uuml;ber uns</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Team</a>
+          <div class="dropdown-content">
+            <a href="#">Tobias Benrath</a> <a href="#">Zahid Firat</a>
+            <a href="#">Steffen Hausmann</a> <a href="#">Maximilian Hehl</a>
+            <a href="#">Markus Huber</a>
+          </div>
+        </li>
+        <li id="kontakt"><a href="#home">Kontakt</a></li>
+      </ul>
+    </div>
+    <main>
+      <div class="content">
+        <h1>Kontakt</h1>
+        <form action="kontakt.php" method="post" autocomplete="on">
+          <div class="formular-angaben">
+            <div class="formular-feld">
+              <label for="vorname">Vorname:</label>
+              <input id="vorname" type="text" name="vorname" />
+            </div>
+
+            <div class="formular-feld">
+              <label for="nachname">Nachname:</label>
+              <input id="nachname" type="text" name="nachname" />
+            </div>
+
+            <div class="formular-feld">
+              <label for="strasse">Stra&szlig;e:</label>
+              <input id="strasse" type="text" name="strasse" />
+            </div>
+
+            <div class="formular-feld">
+              <label for="hausnummer">Hausnummer:</label>
+              <input id="hausnummer" type="text" name="hausnummer" />
+            </div>
+
+            <div class="formular-feld">
+              <label for="plz">PLZ:</label>
+              <input id="plz" type="number" name="plz" />
+            </div>
+
+            <div class="formular-feld">
+              <label for="ort">Ort:</label>
+              <input id="ort" type="text" name="ort" />
+            </div>
+
+            <div class="formular-feld">
+              <label for="land">Land:</label>
+              <input id="land" type="text" name="land" />
+            </div>
+
+            <div class="formular-feld">
+              <label for="tel">Telefonnummer:</label>
+              <input id="tel" type="tel" name="tel" />
+            </div>
+
+            <div class="formular-feld">
+              <label for="mail">E-Mail:</label>
+              <input id="mail" type="email" name="mail" />
+            </div>
+
+            <div class="formular-feld">
+              <label for="text">Ihre Anfrage:</label>
+              <textarea id="text" name="text"></textarea>
+            </div>
+          </div>
+
+          <div class="formular-button">
+            <button type="submit">Absenden</button>
+            <button type="reset">Zur&uuml;cksetzen</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#">Impressum</a></li>
+      </ul>
+    </footer>
+  </body>
 </html>

@@ -42,7 +42,7 @@ footer ul {
 
 
 #heading{
-	padding: 20px;
+	padding: 0px 20px 0px 20px;
 }
 
 
@@ -155,7 +155,7 @@ footer ul {
 		visibility: visible;
 		max-height: 720px;
 		box-sizing: border-box;
-		padding: 20px;
+		padding: 0px 20px 0px 20px;
 
 		height: auto;
 		width: 100%;

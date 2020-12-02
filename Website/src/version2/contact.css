@@ -45,8 +45,33 @@
   display: block;
   width: 100%;
   padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .formular-button button:first-child {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  background-color: #53619e;
+  color: white;
+}
+
+#submit:hover {
+  background-color: #838ecf;
+}
+
+#reset {
+  background-color: #919191;
+}
+
+#reset:hover {
+  background-color: #c1c1c1c1;
+}
+
+#plz {
+  appearance: textfield;
+}
+
+footer {
+  clear: both;
 }

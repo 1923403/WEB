@@ -4,6 +4,7 @@
 
 body {
 	margin: 0px;
+	min-width: 360px;
 }
 
 footer {
@@ -85,5 +86,6 @@ footer ul {
 
 .content {
 	margin-bottom: 60px;
-	padding-left: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }

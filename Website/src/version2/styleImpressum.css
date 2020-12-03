@@ -4,6 +4,7 @@
 
 body {
 	margin: 0px;
+	min-width: 360px;
 }
 
 footer {
@@ -86,13 +87,23 @@ footer ul {
 .content {
 	margin-bottom: 60px;
 	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .impressumList {
 	display: flex;
 	padding: 20px;
-	background-color: white;
 }
+
 .impressumItem {
 	flex: 20%;
+	border: 1px solid #22376f;
+	padding: .5em;
+	margin: .5em;
+}
+
+@media screen and (max-width:1080px) {
+	.impressumList {
+		display: block;
+	}
 }

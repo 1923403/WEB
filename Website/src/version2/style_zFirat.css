@@ -1,5 +1,5 @@
-:root {
-	--main-color: #22376f;
+:root { -
+	-main-color: #22376f;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -138,8 +138,7 @@ footer ul {
 	margin-bottom: auto;
 }
 
-
-/*Text linksbÃ¼ndig*/
+/*Text linksbündig*/
 .leftColumn {
 	flex: 0%;
 	padding: 20px;
@@ -147,31 +146,31 @@ footer ul {
 	margin-top: 50px;
 }
 
-/*Text rechtsbÃ¼ndig*/
+/*Text rechtsbündig*/
 .rightColumn {
 	flex: 0%;
 	padding: 20px;
 	text-align: left;
-	margin-top: 50px;	
+	margin-top: 165px;
 }
 
-#heading{
+#heading {
 	text-align: right;
 }
 
-#underHeading{
+#underHeading {
 	text-align: right;
-	margin-top: -20px;	
+	margin-top: -20px;
 }
 
-.textBox{
+.textBox {
 	box-shadow: 0 0 10px #333;
 	background-color: beige;
 	padding: 1px 10px;
 	margin-bottom: 15px;
 }
 
-.textBox2{
+.textBox2 {
 	box-shadow: 0 0 10px #333;
 	background-color: beige;
 	padding: 1px 10px;
@@ -179,5 +178,15 @@ footer ul {
 	text-align: left;
 }
 
+.textElement{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	padding: 2px 16px;
+	margin-bottom: 20px;
+}
+
+.profile:hover, .textElement:hover {
+	transition: 0.3s;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
 /*Zahid Ende*/

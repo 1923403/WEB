@@ -86,8 +86,18 @@
 			ersetzen. Hier noch viele weitere ebenfalls super tolle und sinnvolle oder -lose Textzeilen f&uuml;r euch zu lesen...
 		</p>
 
+		</div>
+		<div class=box>
+			<div id=cookie>
+			<p>Diese Website verwendet Cookies.
+				Wenn Sie einverstanden sind klicken Sie 'OK', wenn nicht können Sie die Website mit 'Abbrechen' schließen.
+				Für mehr Informationen gehen Sie auf <a href="https://www.cookiesandyou.com/">https://www.cookiesandyou.com/</a>
+			</p>
+			<button class = "btn1">Einverstanden</button>
+			</div>
 		</div>	
 	</div>
+
 	<footer>
 		<ul>
 			<li><a href="impressum.html">Impressum</a></li>
@@ -95,7 +105,13 @@
 		</ul>
 	</footer>
 
-	
+	<script>
+        $(document).ready(function() {
+            $(".btn1").click(function(){
+                $("#cookie").hide();
+            });
+		});
+	</script>
 	<script>
 		function cookieAllert() {
 			var r = confirm("Diese Website verwendet Cookies.\nWenn Sie einverstanden sind klicken Sie 'OK', wenn nicht können Sie die Website mit 'Abbrechen' schließen.\nFür mehr Informationen gehen Sie auf https://www.cookiesandyou.com/");

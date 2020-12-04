@@ -152,18 +152,27 @@ footer ul {
 	border-style: solid;
 	display: inline-block;
 	padding: 2px 16px;
-	margin-bottom: 20px;
 	z-index: 1;
-	background-color: brown;
+	background-color: rgb(97, 151, 195);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	
 }
-.box{
+#cookie:hover {
+	transition: 0.3s;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.cookiecontainer{
 
 	position: absolute;
-	left: 80%;
-	top: 70%;
-	max-width: 300px;
+	left: 81%;
+	top: 74%;
+	max-width: 350px;
 
+}
+.btn1{
+	margin-top: 0;
+	margin-bottom: 5px;
+	margin-right: 10px;
 }
 
 @media screen and (max-width:720px){

@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" type="text/css" href="indexStyle.css">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <title>Team A-04</title>
 </head>
@@ -95,7 +94,7 @@
 				Wenn Sie einverstanden sind klicken Sie 'OK', wenn nicht können Sie die Website mit 'Abbrechen' schließen.
 				Für mehr Informationen gehen Sie auf <a href="https://www.cookiesandyou.com/">https://www.cookiesandyou.com/</a>
 			</p>
-			<button class = "btn1">Einverstanden</button>
+			<button onclick="cookieWarning()" class = "btn1">Einverstanden</button>
 			</div>
 		</div>	
 	</div>
@@ -108,12 +107,17 @@
 	</footer>
 
 	<script>
-        $(document).ready(function() {
-            $(".btn1").click(function(){
-                $("#cookie").hide();
-            });
-		});
+		function cookieWarning() {
+		  var x = document.getElementById("cookie");
+		  if (x.style.display === "none") {
+			x.style.display = "block";
+		  } else {
+			x.style.display = "none";
+		  }
+		}
 	</script>
+	
+
 	<script>
 		function cookieAllert() {
 			var r = confirm("Diese Website verwendet Cookies.\nWenn Sie einverstanden sind klicken Sie 'OK', wenn nicht können Sie die Website mit 'Abbrechen' schließen.\nFür mehr Informationen gehen Sie auf https://www.cookiesandyou.com/");
@@ -121,6 +125,7 @@
     				
   				} else {
     				/*window.close();*/
+					
   				}
 		}
 	</script>

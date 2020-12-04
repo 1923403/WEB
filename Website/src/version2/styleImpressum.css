@@ -97,6 +97,7 @@ footer ul {
 }
 
 .impressumItem {
+	text-align: center;
 	flex: 20%;
 	border: 1px solid #22376f;
 	padding: .5em;

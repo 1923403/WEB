@@ -36,7 +36,8 @@
 
 #text {
   min-height: 100px;
-  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
   margin-bottom: 30px;
   border: 1px solid #ddd;
   border-radius: 5px;

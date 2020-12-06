@@ -5,13 +5,13 @@
 
 /* Create two unequal columns that floats next to each other */
 .leftColumn {
-	flex: 30%;
+	flex: 20%;
 	padding: 20px;
 	max-width: 500px;
   }
   
 .rightColumn {
-	flex: 60%;
+	flex: 70%;
 	padding: 20px;
 }
 

@@ -21,6 +21,7 @@ html {
 /* Navigation & Footer */
 nav {
   position: sticky;
+  top: 0;
 }
 
 nav ul,
@@ -81,8 +82,8 @@ nav #contact {
 
 footer {
   background-color: #22376f;
+  bottom: 0px;
   color: white;
   position: fixed;
-  bottom: 0px;
   width: 100%;
 }

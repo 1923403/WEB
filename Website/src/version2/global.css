@@ -78,3 +78,11 @@ nav .dropdown:hover .dropdown-content {
 nav #contact {
   float: right;
 }
+
+footer {
+  background-color: #22376f;
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}

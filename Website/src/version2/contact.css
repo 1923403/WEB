@@ -3,11 +3,6 @@
   --secondary-color: #53619e;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 .content {
   background-color: #f4f4f4;
   border: 1px solid #000;

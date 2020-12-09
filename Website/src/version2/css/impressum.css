@@ -1,0 +1,38 @@
+:root{
+	--main-color: #22376f;
+}
+
+body {
+	min-width: 360px;
+}
+
+.content {
+	margin: 16px;
+	padding: 16px;
+	margin-bottom: 60px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.content h1, .content h2{
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.impressumList {
+	display: flex;
+	padding: 20px;
+}
+
+.impressumItem {
+	text-align: center;
+	flex: 20%;
+	border: 1px solid var(--main-color);
+	padding: .5em;
+	margin: .5em;
+}
+
+@media screen and (max-width:1080px) {
+	.impressumList {
+		display: block;
+	}
+}

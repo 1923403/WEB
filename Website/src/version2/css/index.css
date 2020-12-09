@@ -83,7 +83,11 @@ body {
 
 .teamDescription h2{
   text-align: center;
-  padding: 10px;
+  padding: 20px;
+}
+
+.teamDescription p{
+  padding-bottom: 10px;
 }
 
 #cookie {

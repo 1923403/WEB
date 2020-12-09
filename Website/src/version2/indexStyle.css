@@ -111,6 +111,7 @@ footer li a:hover {
 
 .profileList {
   display: flex;
+  justify-content: center;
   padding: 10px;
 }
 

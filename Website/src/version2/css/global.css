@@ -24,7 +24,8 @@ html {
 
 /* Navigation & Footer */
 nav {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
 }
 

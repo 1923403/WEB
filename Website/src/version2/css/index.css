@@ -30,6 +30,7 @@ body {
   margin-bottom: 60px;
   max-width: 1600px;
   margin: auto;
+  margin-bottom: 70px;
 }
 
 .profileList {
@@ -89,7 +90,7 @@ body {
 #cookie {
   border-style: solid;
   display: inline-block;
-  padding: 2px 16px;
+  padding: 16px;
   z-index: 1;
   background-color: white;
   box-shadow: 0 4px 8px 0 var(--shadow);
@@ -105,9 +106,19 @@ body {
   width: 30%;
 }
 .btn1 {
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 5px;
   margin-right: 10px;
+  padding: 5px;
+  background-color: var(--main-color);
+  color: white;
+}
+
+.btn2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  padding: 5px;
   background-color: var(--main-color);
   color: white;
 }

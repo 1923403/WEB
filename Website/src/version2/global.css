@@ -81,7 +81,7 @@ nav #contact {
 }
 
 footer {
-  background-color: #22376f;
+  background-color: var(--main-color);
   bottom: 0px;
   color: white;
   position: fixed;

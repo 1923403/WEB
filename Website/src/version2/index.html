@@ -134,7 +134,7 @@
 						oder klicken Sie auf "Mehr Informationen".
 					</p>
 					<button onclick="cookieWarning()" class="btn1">OK</button>
-					<a href="https://www.cookiesandyou.com/" target="_blank"><button>Mehr Informationen</button></a>
+					<a href="https://www.cookiesandyou.com/" target="_blank"><button class="btn2">Mehr Informationen</button></a>
 				</div>
 			</div>
 		</div>
@@ -146,29 +146,7 @@
 		</ul>
 	</footer>
 
-	<script>
-		function cookieWarning() {
-			var x = document.getElementById("cookie");
-			if (x.style.display === "none") {
-				x.style.display = "block";
-			} else {
-				x.style.display = "none";
-			}
-		}
-	</script>
+	<script src="cookiewarnung.js"></script>
 
-
-	<!--<script>
-		function cookieAllert() {
-			var r = confirm("Diese Website verwendet Cookies.\nWenn Sie einverstanden sind klicken Sie 'OK', wenn nicht können Sie die Website mit 'Abbrechen' schließen.\nFür mehr Informationen gehen Sie auf https://www.cookiesandyou.com/");
-  				if (r == true) {
-    				
-  				} else {
-    				/*window.close();*/
-					
-  				}
-		}
-	</script>	-->
 </body>
-
 </html>

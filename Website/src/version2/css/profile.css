@@ -86,4 +86,10 @@ hr{
 	border-style: solid;
 }
 
+@media screen and (max-width: 720px){
+	.leftColumn, .rightColumn{
+		flex-direction: column;
+	}
+}
+
 

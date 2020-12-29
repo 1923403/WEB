@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/global.css" /> -->
 
-    <?php include_once("header.php"); ?>
+    <?php include_once ("header.php"); ?>
 
     <link rel="stylesheet" type="text/css" href="./css/contact.css" />
     <?php include "kontakt.php"; ?> <!--Damit die Error-Variable aufgerufen werden kann-->

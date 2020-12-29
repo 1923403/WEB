@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/global.css" />
     <link rel="stylesheet" type="text/css" href="./css/contact.css" />
+    <?php include "kontakt.php"; ?> <!--Damit die Error-Variable aufgerufen werden kann-->
     <title>Kontakt</title>
   </head>
   <body>
@@ -34,10 +35,12 @@
             <div class="form-group">
               <label for="vorname">Vorname:</label>
               <input id="vorname" type="text" name="vorname" />
+              <span class="error">* <?php echo $error;?></span> <!--druckt theoretisch die eine errornachricht wenn nichts eingegeben wird-->
             </div>
             <div class="form-group">
               <label for="nachname">Nachname:</label>
               <input id="nachname" type="text" name="nachname" />
+              <span class="error">* <?php echo $error;?></span>
             </div>
             <div class="form-group">
               <label for="strasse">Stra&szlig;e:</label>

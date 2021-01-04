@@ -32,6 +32,18 @@ function nutzerinput($data) {
   $data = htmlspecialchars($data);  //Wandelt Zeichen um
   return $data;
 }
+
+$con = new mysqli ("localhost", "testuser","1234","Kontaktformular"); //die Datenbank muss dann jeder anlegen
+$con->set_charset("UTF-8");
+$pstm = $con->prepare("INSERT INTO kontaktformular(vorname,nachname,strasse,hausnummer,plz,ort,land,tel,mail,text) VALUES (?,?,?,?,?,?,?,?,?,?)");
+$pstm->bind_param("sssiississ",$vorname,$nachname,$strasse,$hausnummer,$plz,$ort,$land,$tel,$mail,$text);
+$pstm->execute();
+
+$pstm->close();
+$con->close();
+
+
+
 ?>
 
 

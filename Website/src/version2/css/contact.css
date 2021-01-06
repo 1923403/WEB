@@ -3,6 +3,8 @@
   --secondary-color: #53619e;
 }
 
+
+
 .content {
   background-color: #f4f4f4;
   border: 1px solid #000;
@@ -86,4 +88,8 @@
 
 .form-button #reset:focus {
   border: 2px solid #000;
+}
+
+.error{
+  color: red;
 }

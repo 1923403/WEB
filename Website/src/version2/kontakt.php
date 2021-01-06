@@ -10,16 +10,20 @@
 $vorname = $nachname = $strasse = $hausnummer = $plz = $ort = $land = $tel = $mail = $text = "";
 $error ="";
 
+$checkreq = array("temp"=>false,"temp2"=>false);  //array mit boolean Variablen
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(empty($_POST["vorname"])){
         $error ="Dieses Feld ist ein Pflichtfeld."; 
     }else{
         $vorname = nutzerinput($_POST["vorname"]);
+        $checkreq[0]=true;
     }
     if(empty($_POST["nachname"])){
         $error ="Dieses Feld ist ein Pflichtfeld.";
     }else{
         $nachname = nutzerinput($_POST["nachname"]);
+        $checkreq[1] = true;
     }
     $strasse = nutzerinput($_POST["strasse"]);
     $hausnummer = nutzerinput($_POST["hausnummer"]);
@@ -38,15 +42,17 @@ function nutzerinput($data) {
   return $data;
 }
 
-//hiermit auf Datenbank schreiben
-$con = new mysqli ("localhost", "testuser","1234","Kontaktformular"); //die Datenbank muss dann jeder anlegen
-$con->set_charset("UTF-8");
-$pstm = $con->prepare("INSERT INTO kontaktformular(vorname,nachname,strasse,hausnummer,plz,ort,land,tel,mail,text) VALUES (?,?,?,?,?,?,?,?,?,?)");
-$pstm->bind_param("sssiississ",$vorname,$nachname,$strasse,$hausnummer,$plz,$ort,$land,$tel,$mail,$text);
-$pstm->execute();
+if($checkreq[0]==true && $checkreq[1]==true){ //es wird nur auf die Datenbank geschrieben wenn alle required-Felder einen Eintrag haben.
+  //hiermit auf Datenbank schreiben
+  $con = new mysqli ("localhost", "testuser","1234","Kontaktformular"); //die Datenbank muss dann jeder anlegen
+  $con->set_charset("UTF-8");
+  $pstm = $con->prepare("INSERT INTO kontaktformular(vorname,nachname,strasse,hausnummer,plz,ort,land,tel,mail,text) VALUES (?,?,?,?,?,?,?,?,?,?)");
+  $pstm->bind_param("sssiississ",$vorname,$nachname,$strasse,$hausnummer,$plz,$ort,$land,$tel,$mail,$text);
+  $pstm->execute();
 
-$pstm->close();
-$con->close();
+  $pstm->close();
+  $con->close();
+}
 
 ?>
 
@@ -57,12 +63,12 @@ $con->close();
           <div class="form-container">
             <div class="form-group">
               <label for="vorname">Vorname:</label>
-              <input id="vorname" type="text" name="vorname" />
+              <input id="vorname" type="text" name="vorname" value="<?php echo $vorname; ?>"/>
               <span class="error">* <?php echo $error;?></span>
             </div>
             <div class="form-group">
               <label for="nachname">Nachname:</label>
-              <input id="nachname" type="text" name="nachname" />
+              <input id="nachname" type="text" name="nachname" value="<?php echo $nachname; ?>"/>
               <span class="error">* <?php echo $error;?></span>
             </div>
             <div class="form-group">

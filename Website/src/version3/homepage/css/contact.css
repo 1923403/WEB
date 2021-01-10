@@ -1,0 +1,95 @@
+:root {
+  --main-color: #22376f;
+  --secondary-color: #53619e;
+}
+
+
+
+.content {
+  background-color: #f4f4f4;
+  border: 1px solid #000;
+  line-height: 1.4;
+  margin: 20px auto;
+  margin-top: 60px;
+  margin-bottom: 70px;
+  max-width: 350px;
+  padding: 20px;
+}
+
+.content h1 {
+  text-align: center;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-group input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.form-group input:focus,
+.form-group #text:focus {
+  border-color: var(--secondary-color);
+}
+
+.form-group #plz {
+  appearance: textfield;
+}
+
+.form-group #text {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 100%;
+  margin-bottom: 30px;
+  min-height: 100px;
+  min-width: 100%;
+}
+
+.form-button button {
+  border: 2px solid;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-button #submit {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.form-button #submit:hover {
+  background-color: #838ecf;
+}
+
+.form-button #submit:focus {
+  border: 2px solid #000;
+}
+
+.form-button #reset {
+  background-color: #919191;
+  border-color: #919191;
+}
+
+.form-button #reset:hover {
+  background-color: #c1c1c1c1;
+}
+
+.form-button #reset:focus {
+  border: 2px solid #000;
+}
+
+.error{
+  color: red;
+}

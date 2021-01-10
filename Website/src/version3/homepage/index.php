@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./css/global.css" />
+<?php include_once ("header.php"); ?>
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
     <script>
       document.cookie =
@@ -13,25 +8,7 @@
     <title>Team A-04</title>
   </head>
 
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">&Uuml;ber uns</a></li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropdown-button">Team</a>
-            <div class="dropdown-content">
-              <a href="./profile/tBenrath.html">Tobias Benrath</a>
-              <a href="./profile/zFirat.html">Zahid Firat</a>
-              <a href="./profile/sHausmann.html">Steffen Hausmann</a>
-              <a href="./profile/mHehl.html">Maximilian Hehl</a>
-              <a href="./profile/mHuber.html">Markus Huber</a>
-            </div>
-          </li>
-          <li id="contact"><a href="contact.html">Kontakt</a></li>
-        </ul>
-      </nav>
-    </header>
+    <?php include_once ("navBar.php") ?>
     <main>
       <!--Bildquelle https://unsplash.com/photos/7YVZYZeITc8-->
       <div class="content">
@@ -41,9 +18,9 @@
             <a href="./profile/tBenrath.html">
               <img
                 class="image"
-                src="./media/images/webProfile1.jfif"
-                height="500"
-                width="296"
+                src="./media/images/webProfile1.png"
+                height="501"
+                width="334"
                 alt="Profilfoto von Tobias Benrath"
               />
               <div class="profileDescription">
@@ -77,7 +54,7 @@
                 alt="Profilfoto von Steffen Hausmann"
               />
               <div class="profileDescription">
-                <h3><b>Steffen Hausmann</b></h3>
+                <h3><b>Stef&shy;fen Haus&shy;mann</b></h3>
                 <p>IMB</p>
               </div>
             </a>
@@ -92,7 +69,7 @@
                 alt="Profilfoto von Maximilian Hehl"
               />
               <div class="profileDescription">
-                <h3><b>Maximilian Hehl</b></h3>
+                <h3><b>Ma&shy;xi&shy;mi&shy;li&shy;an Hehl</b></h3>
                 <p>IMB</p>
               </div>
             </a>
@@ -125,12 +102,46 @@
         <div class="teamDescription">
           <h2>Unser Team</h2>
           <p>
-            Wir sind Zahid, Tobias, Steffen, Maximilian und Markus. Diese
+            Wir sind Zahid Firat, Tobias Benrath, Steffen Hausmann, Maximilian Hehl und Markus Huber. Diese
             Webseite entstand im Rahmen des Faches Webbasierte Systeme an der
             <a href="https://www.hs-mannheim.de/">Hochschule Mannheim</a>. Der
             Text der folgenden Abs&auml;tze dient lediglich der Visualiserung
             unserer Webseite.
           </p>
+          <p>Unsere Bildquellen</p>
+          <ul>
+            <li>
+              <a href="https://unsplash.com/photos/ctAsm_deVVk" target="_blank"
+                >https://unsplash.com/photos/ctAsm_deVVk</a
+              >
+            </li>
+            <li>
+              <a href="https://unsplash.com/photos/LkQHGSVzfsk" target="_blank"
+                >https://unsplash.com/photos/LkQHGSVzfsk</a
+              >
+            </li>
+            <li>
+              <a href="https://unsplash.com/photos/7YVZYZeITc8" target="_blank"
+                >https://unsplash.com/photos/7YVZYZeITc8</a
+              >
+            </li>
+            <li>
+              <a href="https://unsplash.com/photos/OhKElOkQ3RE" target="_blank"
+                >https://unsplash.com/photos/OhKElOkQ3RE</a
+              >
+            </li>
+            <li>
+              <a href="https://unsplash.com/photos/rriAI0nhcbc" target="_blank"
+                >https://unsplash.com/photos/rriAI0nhcbc</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.pexels.com/de-de/foto/african-american-menschen-arbeit-arbeiten-arbeitsplatz-1367271/" target="_blank"
+                >https://www.pexels.com/de-de/foto/african-american-menschen-arbeit-arbeiten-arbeitsplatz-1367271/</a
+              >
+            </li>
+          </ul>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, ad
             voluptates! Eius ullam error, tempore qui veritatis earum quaerat
@@ -179,40 +190,12 @@
             </p>
             <button onclick="cookieWarning()" class="btn1">OK</button>
             <a href="https://www.cookiesandyou.com/" target="_blank"
-              ><button>Mehr Informationen</button></a
+              ><button class="btn2">Mehr Informationen</button></a
             >
           </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <ul>
-        <li><a href="impressum.html">Impressum</a></li>
-        <li><a href="datenschutz.html">Datenschutz</a></li>
-      </ul>
-    </footer>
-
-    <script>
-      function cookieWarning() {
-        var x = document.getElementById("cookie");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-    </script>
-
-    <!--<script>
-		function cookieAllert() {
-			var r = confirm("Diese Website verwendet Cookies.\nWenn Sie einverstanden sind klicken Sie 'OK', wenn nicht können Sie die Website mit 'Abbrechen' schließen.\nFür mehr Informationen gehen Sie auf https://www.cookiesandyou.com/");
-  				if (r == true) {
-    				
-  				} else {
-    				/*window.close();*/
-					
-  				}
-		}
-	</script>	-->
-  </body>
-</html>
+    </main>    
+    <script src="cookiewarnung.js"></script>
+    
+    <?php include_once ("footer.php"); ?>

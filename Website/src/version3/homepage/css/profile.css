@@ -1,0 +1,97 @@
+:root{
+	--main-color: #22376f;
+	--shadow: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.leftColumn {
+	flex: 20%;
+	padding: 20px;
+	max-width: 500px;
+  }
+  
+.rightColumn {
+	flex: 70%;
+	padding: 20px;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+#image {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+
+#heading{
+	text-align: center;
+	padding: 20px;
+}
+
+
+.content {
+	margin-bottom: 60px;
+	margin-top: 60px;
+}
+
+.profile{
+	box-shadow: 0 4px 8px 0 var(--shadow);
+	  width: 100%;
+	  align-self: center;
+}
+
+.profile:hover, .textElement:hover {
+	transition: 0.3s;
+	box-shadow: 0 8px 16px 0 var(--shadow);
+}
+
+.profile img{
+	border-radius: 5px 5px 0 0;
+}
+
+.profileDescription {
+	padding: 16px 16px 32px 16px;
+	background-color: var(--main-color);
+	color:white;
+}
+
+.profileDescription h3{
+	padding-bottom: 10px;
+}
+
+.textElement{
+	box-shadow: 0 4px 8px 0 var(--shadow);
+	padding: 16px 16px 32px 16px;
+	margin-bottom: 20px;
+	
+}
+
+.textElement ul{
+	padding-left: 16px;
+}
+.textElement h2, .textElement h3{
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+hr{
+	margin-left: 20px;
+	margin-right: 20px;
+	border: 1px var(--main-color);
+	border-style: solid;
+}
+
+@media screen and (max-width: 720px){
+	.leftColumn, .rightColumn{
+		flex: 100%;
+		margin: auto;
+	}
+}
+
+

@@ -1,54 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-<title>Tobias Benrath</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="../css/global.css">
+<link rel="stylesheet" type="text/css" href="../css/profile.css">
 
+<title>Tobias Benrath</title>
 </head>
 <body>
-    <div id="topmenu">
-		<ul>
-			<li><a href="index.html">&Uuml;ber uns</a></li>
-			<li class="dropdown"><a href="javascript:void(0)"
-				class="dropbtn">Team</a>
-				<div class="dropdown-content">
-					<a href="tBenrath.html">Tobias Benrath</a> 
-					<a href="zFirat.html">Zahid Firat</a> 
-					<a href="sHausmann.html">Steffen Hausmann</a>
-					<a href="mHehl.html">Maximilian Hehl</a>
-					<a href="mHuber.html">Markus Huber</a>
-                </div>
+	<header>
+        <nav>
+          <ul>
+            <li><a href="../index.html">&Uuml;ber uns</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-button">Team</a>
+              <div class="dropdown-content">
+                <a href="tBenrath.html">Tobias Benrath</a>
+                <a href="zFirat.html">Zahid Firat</a>
+                <a href="sHausmann.html">Steffen Hausmann</a>
+                <a href="mHehl.html">Maximilian Hehl</a>
+                <a href="mHuber.html">Markus Huber</a>
+              </div>
             </li>
-			<li id="kontakt"><a href="contact.html">Kontakt</a></li>
-		</ul>
-    </div>
-    <h1 id="heading">Über mich</h1>
-    <div class="row">
-        <div class="column2">
-            <div class="card">
-                <img src="./media/images/tBenrath.gif" alt="Bild" height="100%" width="100%">
-                <div class="cardDescription">
-                    <h2><b>Tobias Benrath</b></h2>
-                    <p>Student</p>
+            <li id="contact"><a href="../contact.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </header>
+	<div class="content">
+        <h1 id="heading">&Uuml;ber mich</h1>
+        <hr/>
+		<div class="container">
+			<div class="leftColumn">
+                <div class="profile">
+                    <img id="image" src="../media/images/webProfile1.png" height="501" width="334" alt="Tobias Benrath">
+                    <div class="profileDescription">
+                        <h3><b>Tobias Benrath</b></h3>
+                        <p>Medizinische Informatik</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="column2">
-            <h1>Tobias Benrath</h1>
-            <p>Mein Name ist Tobias Benrath und ich bin 21 Jahre alt und momentan studiere ich Medizinische Informatik an der Hochschule Mannheim. 
-                Ich liebe das Modul Webbasierte Systeme und bin der Kopf hinter diesem Team. Ohne mich würde hier nix laufen!
-            </p>
-        </div>
-        <div class="column2"></div>
-    </div>
-    <footer>
+			 
+			</div>
+			
+			<div class="rightColumn">
+                <div class="textElement">
+                    <h2>Das bin ich</h2>
+                    <p>Mein Name ist Tobias Benrath, ich bin 22 Jahre alt und wohne in Mannheim. Nach meinem Abitur 2018 absolvierte ich ein Jahr lang
+                        einen Bundesfreiwilligendienst beim DRK im Rettungsdienst. Seit 2019 studiere ich 
+                        medizinische Informatik (IMB) an der <a href="https://www.hs-mannheim.de/">Hochschule Mannheim</a> und befinde mich momentan im dritten Fachsemester.
+                    </p>
+                </div>
+                <div class="textElement">
+                    <h3><b>Bisherige Ausbildung</b></h3>
+                    <ul>
+                        <li>Abitur (2018)</li>
+                        <li>Ausbildung zum Rettungssanit&auml;ter (2018)</li>
+                        <li>Studium der medizinischen Informatik (seit 2019)</li>
+                    </ul>
+                </div>
+                <div class="textElement">
+                    <h3><b>Meine St&auml;rken</b></h3>
+                    <ul>
+                        <li>Verantwortungsbewusstein</li>
+                        <li>Belastbarkeit</li>
+                        <li>Teamf&auml;higkeit</li>
+                    </ul>
+                </div>
+                <div class="textElement">
+                    <h3><b>IT-Kenntnisse</b></h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python (Grundkenntnisse)</li>
+                        <li>HTML, CSS & JavaScript (Grundkenntnisse)</li>
+                        <li>jQuery (Grundkenntnisse)</li>
+                    </ul>
+                </div>
+			</div>
+		</div>
+	</div>
+	<footer>
 		<ul>
-            <li><a href="impressum.html">Impressum</a></li>
-            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="../impressum.html">Impressum</a></li>
+            <li><a href="../datenschutz.html">Datenschutz</a></li>
 		</ul>
 	</footer>
 </body>
-
 </html>

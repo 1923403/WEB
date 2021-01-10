@@ -3,11 +3,14 @@
   --secondary-color: #53619e;
 }
 
+
+
 .content {
   background-color: #f4f4f4;
   border: 1px solid #000;
   line-height: 1.4;
   margin: 20px auto;
+  margin-top: 60px;
   margin-bottom: 70px;
   max-width: 350px;
   padding: 20px;
@@ -85,4 +88,8 @@
 
 .form-button #reset:focus {
   border: 2px solid #000;
+}
+
+.error{
+  color: red;
 }

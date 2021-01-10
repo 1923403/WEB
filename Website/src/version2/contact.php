@@ -1,19 +1,25 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./css/global.css" />
+    <link rel="stylesheet" type="text/css" href="./css/global.css" /> -->
+
+    <?php include_once ("header.php"); ?>
+
     <link rel="stylesheet" type="text/css" href="./css/contact.css" />
+    
     <title>Kontakt</title>
   </head>
   <body>
-    <header>
+
+  <?php include_once ("topleiste.php"); ?>
+<!--     <header>
       <nav>
         <ul>
           <li><a href="index.html">&Uuml;ber uns</a></li>
           <li class="dropdown">
-            <a href="javascript:void(0)" class="dropdown-button">Team</a>
+            <a href="#" class="dropdown-button">Team</a>
             <div class="dropdown-content">
               <a href="./profile/tBenrath.html">Tobias Benrath</a>
               <a href="./profile/zFirat.html">Zahid Firat</a>
@@ -22,10 +28,10 @@
               <a href="./profile/mHuber.html">Markus Huber</a>
             </div>
           </li>
-          <li id="contact"><a href="contact.html">Kontakt</a></li>
+          <li id="contact"><a href="contact.php">Kontakt</a></li>
         </ul>
       </nav>
-    </header>
+    </header> -->
     <main>
       <div class="content">
         <h1>Kontakt</h1>
@@ -79,11 +85,14 @@
         </form>
       </div>
     </main>
-    <footer>
+
+    <?php include_once ("footer.php"); ?>
+<!--      <footer>
       <ul>
         <li><a href="impressum.html">Impressum</a></li>
         <li><a href="datenschutz.html">Datenschutz</a></li>
       </ul>
     </footer>
   </body>
-</html>
+</html> -->
+ 

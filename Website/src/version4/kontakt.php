@@ -9,7 +9,7 @@
 $vorname = $nachname = $strasse = $hausnummer = $plz = $ort = $land = $tel = $mail = $text = "";
 $error ="";
 
-$checkreq = array("temp"=>false,"temp2"=>false);  //array mit boolean Variablen
+$checkreq = array("temp"=>false,"temp2"=>false,"temp3"=>false);  //array mit boolean Variablen
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(empty($_POST["vorname"])){

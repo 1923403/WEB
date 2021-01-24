@@ -6,7 +6,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-button">Team</a>
           <div class="dropdown-content">
-            <a href="./tBenrath.html">Tobias Benrath</a>
+            <a href="./tBenrath.php">Tobias Benrath</a>
             <a href="./zFirat.html">Zahid Firat</a>
             <a href="./sHausmann.php">Steffen Hausmann</a>
             <a href="./mHehl.php">Maximilian Hehl</a>

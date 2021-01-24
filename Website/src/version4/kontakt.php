@@ -12,7 +12,6 @@ $error ="";
 $checkreq = array("temp"=>false,"temp2"=>false);  //array mit boolean Variablen
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  echo "<p>test</p>";
     if(empty($_POST["vorname"])){
         $error ="Dieses Feld ist ein Pflichtfeld."; 
     }else{
@@ -31,7 +30,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $ort = nutzerinput($_POST["ort"]);
     $land = nutzerinput($_POST["land"]);
     $tel = nutzerinput($_POST["tel"]);
-    $mail = nutzerinput($_POST["mail"]);
+    if(empty($_POST["mail"])){
+      $error ="Dieses Feld ist ein Pflichtfeld.";
+    }else{
+      $mail = nutzerinput($_POST["mail"]);
+      $checkreq[2] = true;
+    }
     $text = nutzerinput($_POST["text"]);
 }
 
@@ -43,7 +47,7 @@ function nutzerinput($data) {
   return $data;
 }
 
-if($checkreq[0]==true && $checkreq[1]==true){ //es wird nur auf die Datenbank geschrieben wenn alle required-Felder einen Eintrag haben.
+if($checkreq[0]==true && $checkreq[1]==true && $checkreq[2]){ //es wird nur auf die Datenbank geschrieben wenn alle required-Felder einen Eintrag haben.
   //hiermit auf Datenbank schreiben
   $con = new MySQLi ("localhost", "root","","kontaktformular"); //die Datenbank muss dann jeder anlegen
   if ($con->connect_error) {
@@ -115,6 +119,13 @@ if($checkreq[0]==true && $checkreq[1]==true){ //es wird nur auf die Datenbank ge
             <div class="form-group">
               <label for="mail">E-Mail:</label>
               <input id="mail" type="email" name="mail" />
+              <?php 
+                if($error !=""){
+                  echo "<span class=\"error\"> *"; 
+                  echo $error;
+                  echo "</span>";
+                }
+              ?>
             </div>
             <div class="form-group">
               <label for="text">Ihre Anfrage:</label>

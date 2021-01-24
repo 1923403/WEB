@@ -1,9 +1,7 @@
-<?php include_once ("../header.php")?>
-<link rel="stylesheet" type="text/css" href="../css/profile.css">
-
+<?php include_once ("./header.php")?>
 <title>Maximilian Hehl</title>
 </head>
-<?php include_once ("../navBar.php")?>
+<?php include_once ("./navBar.php")?>
 	<div class="content">
         <h1 id="heading">&Uuml;ber mich</h1>
         <hr/>
@@ -54,11 +52,4 @@
 			</div>
 		</div>
 	</div>
-	<footer>
-		<ul>
-            <li><a href="../impressum.html">Impressum</a></li>
-            <li><a href="../datenschutz.html">Datenschutz</a></li>
-		</ul>
-	</footer>
-</body>
-</html>
+    <?php include_once ("./footer.php"); ?>

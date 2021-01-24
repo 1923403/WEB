@@ -9,7 +9,7 @@
 		<div class="leftColumn">
 			<div class="profile">
 				<img id="image" src="../media/images/webProfile6.jfif" height="501"
-					width="334" alt="Profilfoto von Steffen Hausmann" />
+					width="334" alt="Profilfoto von Zahid Firat" />
 				<div class="profileDescription">
 					<h3>
 						<b>Zahid Firat</b>

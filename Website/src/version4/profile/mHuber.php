@@ -1,33 +1,8 @@
-<!DOCTYPE html>
-<html lang="de">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" type="text/css" href="../css/global.css">
-	<link rel="stylesheet" type="text/css" href="../css/profile.css">
-	<title>Markus Huber</title>
+<?php include_once ("./header.php"); ?>
+<title>Markus Huber</title>
 </head>
-
+<?php include_once ("./navBar.php"); ?>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="../index.html">&Uuml;ber uns</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-button">Team</a>
-					<div class="dropdown-content">
-						<a href="tBenrath.html">Tobias Benrath</a>
-						<a href="zFirat.html">Zahid Firat</a>
-						<a href="sHausmann.html">Steffen Hausmann</a>
-						<a href="mHehl.html">Maximilian Hehl</a>
-						<a href="mHuber.html">Markus Huber</a>
-					</div>
-				</li>
-				<li id="contact"><a href="../contact.html">Kontakt</a></li>
-			</ul>
-		</nav>
-	</header>
 	<div class="content">
 		<h1 id="heading">&Uuml;ber mich</h1>
 		<hr />
@@ -84,12 +59,4 @@
 			</div>
 		</div>
 	</div>
-	<footer>
-		<ul>
-			<li><a href="../impressum.html">Impressum</a></li>
-			<li><a href="../datenschutz.html">Datenschutz</li>
-		</ul>
-	</footer>
-</body>
-
-</html>
+	<?php include_once ("./footer.php"); ?>

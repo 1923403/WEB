@@ -7,7 +7,7 @@
           <a href="#" class="dropdown-button">Team</a>
           <div class="dropdown-content">
             <a href="./profile/tBenrath.php">Tobias Benrath</a>
-            <a href="./profile/zFirat.html">Zahid Firat</a>
+            <a href="./profile/zFirat.php">Zahid Firat</a>
             <a href="./profile/sHausmann.php">Steffen Hausmann</a>
             <a href="./profile/mHehl.php">Maximilian Hehl</a>
             <a href="./profile/mHuber.html">Markus Huber</a>

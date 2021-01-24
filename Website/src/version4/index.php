@@ -30,7 +30,7 @@
             </a>
           </div>
           <div class="profile">
-            <a href="./profile/zFirat.html">
+            <a href="./profile/zFirat.php">
               <img
                 class="image"
                 src="./media/images/webProfile6.jfif"

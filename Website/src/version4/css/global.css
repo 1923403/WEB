@@ -1,0 +1,94 @@
+/* Allgemein */
+:root {
+  --main-color: #22376f;
+  --secondary-color: #53619e;
+  --shadow: rgba(0, 0, 0, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  hyphens: auto;
+  margin: 0px;
+  outline: none;
+  padding: 0px;
+}
+
+body {
+	min-width: 360px;
+}
+
+body,
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation & Footer */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav ul,
+footer ul {
+  background-color: var(--main-color);
+  list-style-type: none;
+  overflow: hidden;
+}
+
+nav li,
+footer li {
+  float: left;
+}
+
+nav li a,
+nav .dropdown-button,
+footer li a {
+  color: #fff;
+  display: inline-block;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav li a:hover,
+nav .dropdown:hover .dropdown-button,
+footer li a:hover {
+  background-color: var(--secondary-color);
+  transition: 0.5s;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px var(--shadow);
+  z-index: 1;
+}
+
+nav .dropdown-content a {
+  color: #000;
+  display: block;
+  padding: 14px 16px;
+  text-align: left;
+}
+
+nav .dropdown-content a:hover {
+  background-color: #f4f4f4;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav #contact {
+  float: right;
+}
+
+footer {
+  background-color: var(--main-color);
+  bottom: 0px;
+  color: white;
+  position: fixed;
+  width: 100%;
+}

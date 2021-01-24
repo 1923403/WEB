@@ -10,7 +10,7 @@
             <a href="./zFirat.php">Zahid Firat</a>
             <a href="./sHausmann.php">Steffen Hausmann</a>
             <a href="./mHehl.php">Maximilian Hehl</a>
-            <a href="./mHuber.html">Markus Huber</a>
+            <a href="./mHuber.php">Markus Huber</a>
           </div>
         </li>
         <li id="contact"><a href="../kontakt.php">Kontakt</a></li>

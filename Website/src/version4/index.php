@@ -15,7 +15,7 @@
         <h1 id="heading">&Uuml;ber uns</h1>
         <div class="profileList">
           <div class="profile">
-            <a href="./profile/tBenrath.html">
+            <a href="./profile/tBenrath.php">
               <img
                 class="image"
                 src="./media/images/webProfile1.png"
@@ -60,7 +60,7 @@
             </a>
           </div>
           <div class="profile">
-            <a href="./profile/mHehl.html">
+            <a href="./profile/mHehl.php">
               <img
                 class="image"
                 src="./media/images/webProfile4.png"
@@ -75,7 +75,7 @@
             </a>
           </div>
           <div class="profile">
-            <a href="./profile/mHuber.html">
+            <a href="./profile/mHuber.php">
               <img
                 class="image"
                 src="./media/images/webProfile5.png"

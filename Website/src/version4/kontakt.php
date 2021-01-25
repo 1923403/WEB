@@ -7,7 +7,7 @@
 
 <?php
 $vorname = $nachname = $strasse = $hausnummer = $plz = $ort = $land = $tel = $mail = $text = "";
-$error ="";
+$error = $vornameErr = $nachnameErr = $mailErr ="";
 
 $checkreq = array("temp"=>false,"temp2"=>false,"temp3"=>false);  //array mit boolean Variablen
 
@@ -17,12 +17,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }else{
         $vorname = nutzerinput($_POST["vorname"]);
         $checkreq[0]=true;
+        if (!preg_match("/^[a-zA-Z-' ]*$/", $vorname)) {
+          $vornameErr = "Nur Buchstaben erlaubt";
+      }
     }
     if(empty($_POST["nachname"])){
         $error ="Dieses Feld ist ein Pflichtfeld.";
     }else{
         $nachname = nutzerinput($_POST["nachname"]);
         $checkreq[1] = true;
+        if (!preg_match("/^[a-zA-Z-' ]*$/", $nachname)) {
+          $nachnameErr = "Nur Buchstaben erlaubt";
+      }
     }
     $strasse = nutzerinput($_POST["strasse"]);
     $hausnummer = nutzerinput($_POST["hausnummer"]);
@@ -35,21 +41,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }else{
       $mail = nutzerinput($_POST["mail"]);
       $checkreq[2] = true;
+      if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+        $mailErr = "Ungültige E-Mail-Adresse";
+    }
     }
     $text = nutzerinput($_POST["text"]);
 }
 
 function nutzerinput($data) {
-  $data = trim($data);              //entfernt unnötige leerzeichen
-  $data = stripslashes($data);      //entfernt backslashes(keine ahnung warum)
-  $data = htmlspecialchars($data);  //Wandelt Zeichen um
+  $data = trim($data);              
+  $data = stripslashes($data);      
+  $data = htmlspecialchars($data);  
   $data = htmlentities($data);
   return $data;
 }
 
-if($checkreq[0]==true && $checkreq[1]==true && $checkreq[2]){ //es wird nur auf die Datenbank geschrieben wenn alle required-Felder einen Eintrag haben.
-  //hiermit auf Datenbank schreiben
-  $con = new MySQLi ("localhost", "root","","kontaktformular"); //die Datenbank muss dann jeder anlegen
+if($checkreq[0]==true && $checkreq[1]==true && $checkreq[2]){ 
+  
+  $con = new MySQLi ("localhost", "root","","kontaktformular"); 
   if ($con->connect_error) {
     die("Connection failed: " . $con->connect_error);
   }
@@ -60,6 +69,7 @@ if($checkreq[0]==true && $checkreq[1]==true && $checkreq[2]){ //es wird nur auf 
 
   $pstm->close();
   $con->close();
+  $vorname = $nachname = $strasse = $hausnummer = $plz = $ort = $land = $tel = $mail = $text = "";
   echo "<div style=\"margin-top:50px\"><p>hat funktioniert...</p></div>";
 }
 
@@ -74,7 +84,12 @@ if($checkreq[0]==true && $checkreq[1]==true && $checkreq[2]){ //es wird nur auf 
               <label for="vorname">Vorname:</label>
               <input id="vorname" type="text" name="vorname" value="<?php echo $vorname; ?>"/>
               <?php 
-                if($error !=""){
+                if($vornameErr !=""){
+                  echo "<span class=\"error\"> *"; 
+                  echo $vornameErr;
+                  echo "</span>";
+                }
+                elseif($error !=""){
                   echo "<span class=\"error\"> *"; 
                   echo $error;
                   echo "</span>";
@@ -85,7 +100,12 @@ if($checkreq[0]==true && $checkreq[1]==true && $checkreq[2]){ //es wird nur auf 
               <label for="nachname">Nachname:</label>
               <input id="nachname" type="text" name="nachname" value="<?php echo $nachname; ?>"/>
               <?php 
-                if($error !=""){
+                if($nachnameErr !=""){
+                  echo "<span class=\"error\"> *"; 
+                  echo $nachnameErr;
+                  echo "</span>";
+                }
+                elseif($error !=""){
                   echo "<span class=\"error\"> *"; 
                   echo $error;
                   echo "</span>";
@@ -120,7 +140,12 @@ if($checkreq[0]==true && $checkreq[1]==true && $checkreq[2]){ //es wird nur auf 
               <label for="mail">E-Mail:</label>
               <input id="mail" type="email" name="mail" />
               <?php 
-                if($error !=""){
+                if($mailErr !=""){
+                  echo "<span class=\"error\"> *"; 
+                  echo $mailErr;
+                  echo "</span>";
+                }
+                elseif($error !=""){
                   echo "<span class=\"error\"> *"; 
                   echo $error;
                   echo "</span>";
